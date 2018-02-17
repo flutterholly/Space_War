@@ -9,6 +9,7 @@ loose music: Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov
 import pygame
 import random
 import math
+import sys
 from os import path
 
 
@@ -124,7 +125,7 @@ shield_sound = pygame.mixer.Sound(path.join(snd_dir,'shield.wav'))
 #*********Function**********
 def quitgame():
     pygame.quit()
-    quit()
+    sys.exit()
 
 def newmeteorite():
     m = Meteorite()
